@@ -29,6 +29,11 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+ <profiles>
+   <profile>
+     <id>spring-deploy</id>
+
 <distributionManagement>
      <repository>
        <id>vcard-releases</id>
@@ -41,4 +46,8 @@
        <url>http://ip-172-31-46-149.ec2.internal:8081/nexus/content/repositories/vcard-snapshots/</url>
      </snapshotRepository>
    </distributionManagement>
+
+   </profile>
+ </profiles>
+
 </project>
